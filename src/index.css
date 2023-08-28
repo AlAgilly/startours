@@ -1,0 +1,250 @@
+/* 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #effdff;
+}
+.wavebutton {
+  position: relative;
+  display: block;
+  padding: 10px 30px;
+  border: 3px solid #00aeff;
+  text-transform: uppercase;
+  color: #00aeff;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+.wavebutton:hover {
+  color: #fff;
+}
+.wavebutton span {
+  position: relative;
+  z-index: 1;
+  transition: 1s;
+}
+.wavebutton .wave {
+  position:absolute;
+  top: calc(100% + 22px);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00aeff;
+  transition: 1s;
+}
+.wavebutton:hover .wave {
+  top: 0;
+}
+.wavebutton .wave:before {
+  content: '';
+  position: absolute;
+  top: -22px;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background: url(./assets/wave.png);
+  animation: animate 0.5s linear infinite;
+}
+@keyframes animate {
+  0%{
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 118px;
+  }
+}
+.hero {
+  background: url(./assets/3.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.content {
+}
+.content h1{
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 0px 0px 10px 10px #ff0000;
+
+}
+.content h1 {
+  font-family: 'Baloo 2', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid #000; */
+}
+
+body{
+  background-color: #fff;
+}
+.wavebutton {
+  position: relative;
+  display: block;
+  padding: 10px 40px;
+  border: 3px solid #fc724a;
+  text-transform: uppercase;
+  background-color: #fc724a;
+  letter-spacing: 2px;
+  overflow: hidden;
+  color: #fff;
+}
+.wavebutton:hover {
+  color: #fc724a;
+}
+.wavebutton span {
+  position: relative;
+  z-index: 1;
+  transition: 1s;
+}
+.wavebutton .wave {
+  position:absolute;
+  top: calc(100% + 22px);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transition: 1s;
+}
+.wavebutton:hover .wave {
+  top: 0;
+}
+.wavebutton .wave:before {
+  content: '';
+  position: absolute;
+  top: -22px;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background: url(./assets/wave.png);
+  animation: animate 0.5s linear infinite;
+}
+.wavebutton2 {
+  position: relative;
+  display: block;
+  padding: 10px 40px;
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  background-color: #fff;
+  letter-spacing: 2px;
+  overflow: hidden;
+  color: #fc724a;
+  transition: 1s;
+}
+.wavebutton2:hover {
+  color: #fff;
+  border: 3px solid #fc724a;
+
+}
+.wavebutton2 span {
+  position: relative;
+  z-index: 1;
+  /* transition: 1s; */
+}
+.wavebutton2 .wave2 {
+  position:absolute;
+  top: calc(100% + 22px);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fc724a;
+  transition: 1s;
+}
+.wavebutton2:hover .wave2 {
+  top: 0;
+}
+.wavebutton2 .wave2:before {
+  content: '';
+  position: absolute;
+  top: -22px;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background: url(./assets/wave2.png);
+  animation: animate 0.5s linear infinite;
+}
+@keyframes animate {
+  0%{
+    background-position-x: 0%;
+    /* background-position-y: -22px; */
+  }
+  100% {
+    background-position-x: 118px;
+    /* background-position-y: 0; */
+  }
+}
+.hero {
+  background: url(./assets/3.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 72%, 46% 100%, 0 71%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  }
+.content {
+  /* border: 3px solid #000; */
+}
+.content h1{
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 0px 0px 10px #000;
+
+}
+.nivnav {
+  /* text-shadow: 0px 0px 10px #000;
+  color: #fff;
+  background-color: #275da355; */
+}
+.nivnav .topnav {
+  background-color: #fff;
+  font-family: 'Baloo 2', cursive;
+font-family: 'Montserrat', sans-serif;
+ font-weight: 700;
+ font-size: 30px;
+}
+.nivnav h1 {
+  margin-left: 20px;
+}
+.nivnav .navy {
+  background-color: #135fcc;
+  border-bottom: 1px solid #fff;
+}
+.nivnav .navy a {
+  padding: 5px 15px;
+  color: #fff;
+  border-bottom: 2px solid #ffffff00;
+  transition: 0.5s;
+}
+.nivnav .navy a:hover {
+  /* padding: 7px 20px; */
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+.content h1 {
+  font-family: 'Baloo 2', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 55px;
+  color: #ffffff;
+}
+.content h1 span {
+  color: #fc724a;
+
+}
+
